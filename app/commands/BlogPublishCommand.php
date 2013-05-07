@@ -37,31 +37,15 @@ class BlogPublishCommand extends Command {
 	 */
 	public function fire()
 	{
-		//
-	}
+		$path = Config::get('blog.path');
+		$index_path = $path.'/index.json';
+		$post_path = $path.'/posts/';
+		$page_path = $path.'/pages/';
 
-	/**
-	 * Get the console command arguments.
-	 *
-	 * @return array
-	 */
-	protected function getArguments()
-	{
-		return array(
-			array('example', InputArgument::REQUIRED, 'An example argument.'),
-		);
-	}
+		$index_file = File::get($index_path, true);
+		$index_items = json_decode($index_file);
 
-	/**
-	 * Get the console command options.
-	 *
-	 * @return array
-	 */
-	protected function getOptions()
-	{
-		return array(
-			array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
-		);
+		$this->info();
 	}
 
 }

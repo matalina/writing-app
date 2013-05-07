@@ -65,4 +65,14 @@ return array(
 	|
 	*/
 	'exceprt_word_count' => NULL,
+
+	/*
+	|--------------------------------------------------------------------------
+	| Do Not Edit Here
+	|--------------------------------------------------------------------------
+	|
+	| The path to the posts and pages parent folder
+	|
+	*/
+	'path' => realpath(app_path().'/../assets')
 );
