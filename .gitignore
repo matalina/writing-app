@@ -4,3 +4,5 @@ composer.phar
 composer.lock
 .DS_Store
 *.sublime*
+app/config/live
+app/config/local

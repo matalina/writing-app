@@ -10,8 +10,16 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Index Page
+Route::get('/{page?}','PostController@index')->where('page', '\d+');
+// Posts - /2013/03/code-igniter-to-laravel/
+Route::get('/{year}/{month}/{slug}', 'PostController@post')
+	->where(array(
+		'year' => '\d+',
+		'month' => '\d+',
+		'slug' => '[0-9a-z\-]+'
+	));
+// RSS Feed
+Route::get('feed','PostController@feed');
+// Pages - /level-up-my-life/
+Route::get('/{slug}', 'PostController@page')->where('slug', '[0-9a-z\-]+');
