@@ -10,5 +10,4 @@
 | the console gets access to each of the command object instances.
 |
 */
-$artisan->add(new BlogPublishCommand);
 $artisan->add(new WordPressConvertCommand);

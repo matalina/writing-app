@@ -1,9 +1,11 @@
 # [insert cool name here]
-A simple blog based on Laravel 4.  Using markdown static files to generate content.
+A simple blog based on Laravel 4.  Using markdown static files to generate content.  Uses a SQLite database to keep track of posts and pages.
 
-* Laravel 4
-* Disqus for comments
+* [Laravel](http://laravel.com) 4
+* SQLite 3
+* [Disqus](http://disqus.com/) for comments
 * Google Analytics
+* [Epic Editor](http://epiceditor.com/)
 
 ## To Install
 1. Clone this repository
@@ -19,7 +21,12 @@ A simple blog based on Laravel 4.  Using markdown static files to generate conte
 
 ## Change Log
 
+**2013-05-09**
+
+* Added Epic Editor and SQL support
+
 **2013-05-07**
 
+* Started working on ```blog:publish``` _(commit - 38cdd96)_
 * Stubbed out base application _(commit - 7c6239b)_
 * Initial Commit of Base Laravel 4 install. _(commit - 909aefd)_
