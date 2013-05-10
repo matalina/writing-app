@@ -21,9 +21,13 @@ A simple blog based on Laravel 4.  Using markdown static files to generate conte
 
 ## Change Log
 
+**2013-05-10**
+
+* Stubbed out Admin Controller
+
 **2013-05-09**
 
-* Added Epic Editor and SQL support
+* Added Epic Editor and SQLite support for tracking users & page/post publishing _(commit - 1f30ef3)_
 
 **2013-05-07**
 

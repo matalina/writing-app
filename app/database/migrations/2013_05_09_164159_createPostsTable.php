@@ -15,6 +15,7 @@ class CreatePostsTable extends Migration {
 		{
 		    $table->increments('id');
 		    $table->string('filename');
+		    $table->integer('author'); // user.id
 		    $table->timestamps();
 		});
 	}
